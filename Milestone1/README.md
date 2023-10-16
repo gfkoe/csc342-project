@@ -1,3 +1,3 @@
-# [Project Title]
-## Group [X]: Milestone 1
+# [Sports Place]
+## Group [T]: Milestone 1
 
