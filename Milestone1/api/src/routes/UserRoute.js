@@ -1,5 +1,5 @@
 const express = require("express");
 const userRouter = express.Router();
-const UserDao = require("./db/UserDAO.js");
+const UserDAO = require("./db/UserDAO.js");
 
 module.exports = userRouter;
