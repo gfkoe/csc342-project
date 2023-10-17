@@ -7,4 +7,8 @@ const routes = express.Router();
 routes.use("/teams", teamRouter);
 routes.use("/users", userRouter);
 
+app.get("/", (req, res) => {
+  res.json({ your_api: "it works" });
+});
+
 module.exports = routes;
