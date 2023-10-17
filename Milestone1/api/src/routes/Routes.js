@@ -7,8 +7,8 @@ const routes = express.Router();
 routes.use("/teams", teamRouter);
 routes.use("/users", userRouter);
 
-app.get("/", (req, res) => {
+routes.get("/", (req, res) => {
   res.json({ your_api: "it works" });
-});
+}); //FIXME
 
 module.exports = routes;
