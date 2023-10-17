@@ -1,12 +1,12 @@
-const express = require('express');
+const express = require("express");
 
 const app = express();
 const PORT = process.env.PORT;
 
 app.use(express.json());
 
-app.get('/', (req,  res) => {
-  res.json({your_api: 'it works'});
+app.get("/", (req, res) => {
+  res.json({ your_api: "it works" });
 });
 
 // As our server to listen for incoming connections
