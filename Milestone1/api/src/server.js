@@ -6,12 +6,18 @@ const PORT = process.env.PORT;
 
 app.use(express.json());
 
+// Import the userRouter from UserRoute.js
+const userRouter = require("./routes/UserRoute.js");
 
-// app.get("/", (req, res) => {
-//   res.json({ your_api: "it works" });
-// });
+// Register the userRouter with the /users path
+app.use("/users", userRouter);
 
+// Import the rest of your routers
 app.use(routes);
 
-// As our server to listen for incoming connections
+// Define a default route
+app.get("/", (req, res) => {
+  res.json({ your_api: "it works" });
+});
+
 app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
