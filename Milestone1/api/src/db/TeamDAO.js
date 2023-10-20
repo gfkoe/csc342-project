@@ -5,7 +5,14 @@ const scheduleData = require("./data/schedule.json");
 const liveScoreData = require("./data/liveScore.json");
 
 // data for team information
-const teamData = require("./data/teams.json");
+
+const nflData = require("./data/nflTeams.json");
+
+const nbaData = require("./data/nbaTeams.json");
+
+const mlbData = require("./data/mlbTeams.json");
+
+const mlsData = require("./data/mlsTeams.json");
 
 function getScheduleForLeague(leagueId) {
   // Retrieve and filter schedule data for the specified league
@@ -17,13 +24,31 @@ function getLiveScoreForGame(gameId) {
   return liveScoreData.find((item) => item.gameId === gameId);
 }
 
-function getTeamInfo(teamId) {
+function getNflTeamInfo(teamId) {
   // Retrieve team information for the specified team
-  return teamData.find((item) => item.teamId === teamId);
+  return nflData.find((item) => item.teamId === teamId);
+}
+
+function getNbaTeamInfo(teamId) {
+  // Retrieve team information for the specified team
+  return nbaData.find((item) => item.teamId === teamId);
+}
+
+function getMlbTeamInfo(teamId) {
+  // Retrieve team information for the specified team
+  return mlbData.find((item) => item.teamId === teamId);
+}
+
+function getMlsTeamInfo(teamId) {
+  // Retrieve team information for the specified team
+  return mlsData.find((item) => item.teamId === teamId);
 }
 
 module.exports = {
   getScheduleForLeague,
   getLiveScoreForGame,
-  getTeamInfo,
+  getNflTeamInfo,
+  getNbaTeamInfo,
+  getMlbTeamInfo,
+  getMlsTeamInfo,
 };

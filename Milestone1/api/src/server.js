@@ -16,8 +16,8 @@ app.use("/users", userRouter);
 app.use(routes);
 
 // Define a default route
-app.get("/", (req, res) => {
-  res.json({ your_api: "it works" });
-});
+// app.get("/", (req, res) => {
+//   res.json({ your_api: "it works" });
+// });
 
 app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));

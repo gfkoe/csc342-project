@@ -1,95 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&family=Pixelify+Sans&family=Roboto&family=Young+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pixelify+Sans&family=Roboto&family=Young+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&family=Pixelify+Sans&family=Roboto&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pixelify+Sans&family=Roboto&family=Young+Serif&display=swap");
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .header h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 42px;
+  font-family: "Oswald", sans-serif;
+  font-size: 42px;
 }
 
 .accountInfo {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .accountInfo h1 {
-    font-family: 'Monteserrat', sans-serif;
-    font-style: italic;
-    margin-bottom: 50px;
+  font-family: "Monteserrat", sans-serif;
+  font-style: italic;
+  margin-bottom: 50px;
 }
 
 .username {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 #userLabel {
-    font-family: 'Oswald', sans-serif;
-    margin-bottom: 5px;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 5px;
 }
 
 #userText {
-    width: 300px;
+  width: 300px;
 }
 
 .password {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 #passLabel {
-    font-family: 'Oswald', sans-serif;
-    margin-bottom: 5px;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 5px;
 }
 
 #passText {
-    width: 300px;
+  width: 300px;
 }
 
 .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 310px;
 }
 
 #loginBtn {
-    font-family: 'Oswald', sans-serif;
-    border: 1px solid gray;
-    font-size: 16px;
-    width: 100px;
-    height: 50px;
+  font-family: "Oswald", sans-serif;
+  border: 1px solid gray;
+  font-size: 16px;
+  width: 100px;
+  height: 50px;
 }
 
 #loginBtn:hover {
-    background-color: gray;
-    color: white;
-    cursor: pointer;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
 }
 
 #createAccountBtn {
-    font-family: 'Oswald', sans-serif;
-    border: 1px solid gray;
-    font-size: 16px;
-    width: 100px;
-    height: 50px;
+  font-family: "Oswald", sans-serif;
+  border: 1px solid gray;
+  font-size: 16px;
+  width: 100px;
+  height: 50px;
 }
 
 #createAccountBtn:hover {
-    background-color: gray;
-    color: white;
-    cursor: pointer;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
 }
