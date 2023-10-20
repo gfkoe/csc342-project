@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&family=Pixelify+Sans&family=Roboto&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pixelify+Sans&family=Roboto&family=Young+Serif&display=swap');
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header img {
+    width: 75px;
+}
+
+#mainHeader {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+}
+
+#leagueHeader {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-style: italic;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 205px;
+    margin-bottom: 5px;
+}
+
+#settingsBtn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 75px;
+    border: 1px solid gray;
+    border-radius: 12%;
+}
+
+#settingsBtn:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+#signInBtn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 100px;
+    border: 1px solid gray;
+    border-radius: 12%;
+}
+
+#signInBtn:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+#notifications {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 100px;
+    border: 1px solid gray;
+    border-radius: 12%;
+}
+
+#notifications:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.homeDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.homeDiv button {
+    margin-right: 205px;
+}
+
+#home {
+    width: 75px;
+    border: 1px solid gray;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 12%;
+}
+
+#home:hover {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
+
+.allTeamsHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conferenceHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conferenceTitles {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.conferenceTeams {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nfcWest {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 45px;
+}
+
+.divisions {
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nba-labels {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nba-labels-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.nba-labels label {
+    margin-left: 400px;
+}
+
+.nba-labels-2 label {
+    margin-left: 415px;
+}
+
+.nba-teams {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nba-teams-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nba-teams ul {
+    margin-left: 375px;
+}
+
+.nba-teams-2 ul {
+    margin-left: 390px;
+}
+
+.mlb-labels {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mlb-labels label {
+    margin-left: 450px;
+}
+
+.mlb-teams {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mlb-teams ul {
+    margin-left: 385px;
+}
+
+.mls-labels {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mls-labels label {
+    margin-left: 450px;
+}
+
+.mls-teams {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mls-teams ul {
+    margin-left: 385px;
+}

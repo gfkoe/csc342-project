@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&family=Pixelify+Sans&family=Roboto&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pixelify+Sans&family=Roboto&family=Young+Serif&display=swap');
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#mainHeader {
+    margin: 0;
+    padding-bottom: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+}
+
+#backBtn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid gray;
+}
+
+#backBtn:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.accountSettings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accountSettings h1 {
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+}
+
+.teamLabels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+#selectLLabel {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#selectFTLabel {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.dropdownMenus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectLeague {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.selectFavoriteTeam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+#selectLMenu {
+    width: 100px;
+}
+
+#selectFTMenu {
+    width: 150px;
+}
