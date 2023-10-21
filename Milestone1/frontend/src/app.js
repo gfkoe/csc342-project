@@ -2,7 +2,7 @@ const express = require("express");
 const routes = express.Router();
 const app = express();
 const PORT = process.env.PORT;
-
+app.use(express.urlencoded({ extended: true }));
 // Designate the static folder as serving static resources
 app.use(express.static(__dirname + "/static"));
 
