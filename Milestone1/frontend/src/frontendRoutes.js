@@ -1,7 +1,7 @@
 const express = require("express");
 const frontendRouter = express.Router();
 
-const html_dir = __dirname + "/templates/";
+const html_dir = __dirname + "/";
 
 frontendRouter.get("/", (req, res) => {
   res.sendFile(`${html_dir}home.html`);
