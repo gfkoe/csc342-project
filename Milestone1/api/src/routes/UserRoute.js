@@ -1,27 +1,22 @@
-const express = require("express");
-const userRouter = express.Router();
-const UserDAO = require("../db/UserDAO.js");
+const express = require('express');
+const frontendRouter = express.Router();
 
-// User registration endpoint
-userRouter.post("/register", (req, res) => {
-  const { username, password } = req.body;
-  const newUser = UserDAO.createUser(username, password);
-  if (newUser) {
-    res.json({ message: "User registered successfully" });
-  } else {
-    res.status(400).json({ error: "User already exists" });
-  }
+const path = require('path');
+frontendRouter.use(express.static('static'));
+frontendRouter.use(express.urlencoded({extended: true}));
+const html_dir = path.join(__dirname, '../../templates/');
+
+frontendRouter.get('/', (req, res) => {
+  res.sendFile(`${html_dir}index.html`);
 });
 
-// User login endpoint
-userRouter.post("/login", (req, res) => {
-  const { username, password } = req.body;
-  const user = UserDAO.authenticateUser(username, password);
-  if (user) {
-    res.json({ message: "User logged in successfully" });
-  } else {
-    res.status(401).json({ error: "Authentication failed" });
-  }
+
+frontendRouter.get('/error', (req, res) => {
+  res.sendFile(`${html_dir}error.html`);
 });
 
-module.exports = userRouter;
+frontendRouter.get('/login', (req,  res) => {
+  res.sendFile(`${html_dir}login.html`);
+});
+
+module.exports = frontendRouter;
