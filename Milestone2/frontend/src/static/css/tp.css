@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&family=Pixelify+Sans&family=Roboto&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pixelify+Sans&family=Roboto&family=Young+Serif&display=swap");
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 42px;
+  margin: 0;
+}
+
+#signIn {
+  width: 100px;
+  border-radius: 12%;
+  border: 1px solid gray;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+#signIn:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+#notifications {
+  width: 100px;
+  border-radius: 12%;
+  border: 1px solid gray;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+#notifications:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+#profilePic {
+  width: 75px;
+}
+
+.settingsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+
+.settingsDivStyle {
+  margin-right: 208px;
+}
+
+#settingsBtn {
+  width: 75px;
+  border-radius: 12%;
+  border: 1px solid gray;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+#settingsBtn:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.leagueHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+
+.leagueHeaderStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leagueHeaderStyle h1 {
+  align-self: center;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-style: italic;
+}
+
+.leagueHeaderBtnStyle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.homeBtnStyle {
+  margin-right: 207px;
+}
+
+#home {
+  width: 75px;
+  border-radius: 12%;
+  border: 1px solid gray;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+#home:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.mainBtns {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+
+#schedule {
+  margin-left: 250px;
+  width: 100px;
+  height: 35px;
+  border: 1px solid gray;
+  border-radius: 12%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+#schedule:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+#scores {
+  margin-right: 250px;
+  width: 100px;
+  height: 35px;
+  border: 1px solid gray;
+  border-radius: 12%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+#scores:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ads {
+  display: flex;
+  height: 400px;
+  width: 110px;
+  flex-direction: column;
+  border: 2px solid gray;
+  align-items: center;
+  justify-content: center;
+}
+
+.homePicture {
+  display: flex;
+  height: 400px;
+  width: 350px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid gray;
+}
+
+.favorite-teams {
+  display: flex;
+  height: 400px;
+  width: 110px;
+  border: 2px solid gray;
+  flex-direction: column;
+  align-items: center;
+}
+
+#fTeamsLabel {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#nflLabel {
+  font-family: "Oswald", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  align-self: flex-start;
+}
+
+#nbaLabel {
+  font-family: "Oswald", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  align-self: flex-start;
+}
+
+#mlbLabel {
+  font-family: "Oswald", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  align-self: flex-start;
+}
+
+#mlsLabel {
+  font-family: "Oswald", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  align-self: flex-start;
+}

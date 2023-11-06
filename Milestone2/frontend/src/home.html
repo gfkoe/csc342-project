@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home Page</title>
+    <!-- CSS Styling File For Homepage Link -->
+    <link rel="stylesheet" href="/css/home.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1 id="header_title">Sports Place</h1>
+      <button id="signIn"><a href="./login">Sign In</a></button>
+      <button id="notifications">Notifications</button>
+      <img id="profilePic" src="/images/default_profile_pic.webp" />
+    </div>
+
+    <div class="settings">
+      <div class="space-settings">
+        <button id="settingsBtn"><a href="./settings">Settings</a></button>
+      </div>
+    </div>
+
+    <div class="leagues">
+      <div class="dropdownLeagues">
+        <button id="nfl"><a href="./nfl">NFL</a></button>
+        <div class="dropdownLeagues-content">
+          <a href="#">Upcoming Games</a>
+          <a href="#">All Teams</a>
+        </div>
+      </div>
+
+      <div class="dropdownLeagues">
+        <button><a href="./nba">NBA</a></button>
+
+        <div class="dropdownLeagues-content">
+          <a href="#">Upcoming Games</a>
+          <a href="#">All Teams</a>
+        </div>
+      </div>
+
+      <div class="dropdownLeagues">
+        <button><a href="./mlb">MLB</a></button>
+
+        <div class="dropdownLeagues-content">
+          <a href="#">Upcoming Games</a>
+          <a href="#">All Teams</a>
+        </div>
+      </div>
+
+      <div class="dropdownLeagues">
+        <button><a href="./mls">MLS</a></button>
+
+        <div class="dropdownLeagues-content">
+          <a href="#">Upcoming Games</a>
+          <a href="#">All Teams</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <!-- Ads -->
+      <div class="ads">ADS</div>
+
+      <!-- Sports Picture -->
+      <div class="homePicture">HOME PICTURE</div>
+
+      <!-- Favorite Teams -->
+      <div class="favorite-teams">
+        <label id="fTeamsLabel">Favorite Teams</label>
+        <label id="nflLabel">NFL:</label>
+        <label id="nbaLabel">NBA:</label>
+        <label id="mlbLabel">MLB:</label>
+        <label id="mlsLabel">MLS:</label>
+      </div>
+    </div>
+    <script src="/js/home.js" type="module"></script>
+  </body>
+</html>
