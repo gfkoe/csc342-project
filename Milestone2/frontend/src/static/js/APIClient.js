@@ -1,4 +1,4 @@
-import HTTPClient from "./HTTPClient";
+import HTTPClient from "./HTTPClient.js";
 const API_BASE = "api";
 
 export default {
@@ -7,6 +7,10 @@ export default {
   },
   getTeam: (teamId) => {
     return HTTPClient.get(API_BASE + `/leagues/${leagueId}` + "/schedule");
+  },
+
+  getUser: (userId) => {
+    return HTTPClient.get(API_BASE + `/users/${userId}`);
   },
 
   logIn: (username, password) => {

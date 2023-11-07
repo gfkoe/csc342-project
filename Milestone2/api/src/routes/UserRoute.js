@@ -7,19 +7,25 @@ const path = require("path");
 // frontendRouter.use(express.urlencoded({extended: true}));
 // const html_dir = path.join(__dirname, '../../templates/');
 
-frontendRouter.get("/", (req, res) => {
+const {
+  TokenMiddleware,
+  generateToken,
+  removeToken,
+} = require("../middleware/TokenMiddleware");
+
+userRouter.get("/", (req, res) => {
   res.sendFile(`${html_dir}index.html`);
 });
 
-frontendRouter.get("/error", (req, res) => {
+userRouter.get("/error", (req, res) => {
   res.sendFile(`${html_dir}error.html`);
 });
 
-frontendRouter.get("/login", (req, res) => {
+userRouter.get("/login", (req, res) => {
   res.sendFile(`${html_dir}login.html`);
 });
 
-const UserDAO = require("./db/UserDAO");
+const UserDAO = require("../db/UserDAO");
 
 userRouter.post("/users/login", (req, res) => {
   if (req.body.username && req.body.password) {
@@ -52,4 +58,18 @@ userRouter.get("/users/current", TokenMiddleware, (req, res) => {
   res.json(req.user);
 });
 
+userRouter.get("/users/:userId", (req, res) => {
+  const id = req.params.userId;
+  UserDAO.getUserById(id)
+    .then((user) => {
+      let result = {
+        user: user,
+      };
+      res.json(result);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(err.code).json({ error: err.message });
+    });
+});
 module.exports = userRouter;
