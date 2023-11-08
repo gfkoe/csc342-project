@@ -4,8 +4,8 @@ const userRouter = require("./UserRoute.js");
 
 const routes = express.Router();
 
-routes.use("/api/teamsinfo", teamRouter);
-routes.use("/api/usersinfo", userRouter);
+routes.use(teamRouter);
+routes.use(userRouter);
 
 routes.get("/", (req, res) => {
   res.json({ your_api: "it works" });
