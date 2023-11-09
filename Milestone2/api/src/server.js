@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config({path: '../.env'});
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 80;
 
 app.use(express.json());
 
@@ -13,6 +13,7 @@ app.use(express.json());
 
 // // Register the userRouter with the /users path
 // app.use("/users", userRouter);
+// app.use(userRouter);
 
 // Import the rest of your routers
 app.use(routes);
