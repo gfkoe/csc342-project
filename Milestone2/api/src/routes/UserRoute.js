@@ -2,6 +2,9 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const userRouter = express.Router();
 
+userRouter.use(cookieParser());
+userRouter.use(express.json());
+
 const path = require("path");
 // frontendRouter.use(express.static('static'));
 // frontendRouter.use(express.urlencoded({extended: true}));
