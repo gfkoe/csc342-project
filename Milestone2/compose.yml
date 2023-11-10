@@ -26,3 +26,12 @@ services:
       - PORT=80
     env_file:
       - .env
+
+  database:
+    image: mariadb:10.6
+    restart: unless-stopped
+    volumes:
+      - ""
+
+    env_file:
+      - .env
