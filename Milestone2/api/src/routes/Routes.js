@@ -1,6 +1,6 @@
 const express = require("express");
-const teamRouter = require("./TeamRoute.js");
-const userRouter = require("./UserRoute.js");
+const teamRouter = require("./TeamRoute");
+const userRouter = require("./UserRoute");
 
 const routes = express.Router();
 routes.use(teamRouter);
