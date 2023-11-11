@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   let account_button = document.querySelector("#profilePic");
 
   account_button.addEventListener("click", (e) => {
-    document.location("/account");
+    document.location = "/account";
   });
 
   nfl_button.addEventListener("click", (e) => {
