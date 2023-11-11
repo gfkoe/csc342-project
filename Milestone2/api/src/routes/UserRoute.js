@@ -43,8 +43,7 @@ userRouter.post("/users/login", (req, res) => {
         res.json(result);
       })
       .catch((err) => {
-        console.log(err);
-        res.status(err.code).json({ error: err.message });
+        res.status(401).json({ error: err });
       });
   } else {
     res.status(401).json({ error: "Not authenticated" });

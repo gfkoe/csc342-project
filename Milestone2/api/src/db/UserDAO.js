@@ -31,5 +31,5 @@ function getUserById(userId) {
 
 module.exports = {
   getUserByCredentials: getUserByCredentials,
-  getuserById: getUserById,
+  getUserById: getUserById,
 };
