@@ -12,8 +12,7 @@ loginButton.addEventListener("click", (e) => {
   api
     .logIn(username.value, password.value)
     .then((userData) => {
-      console.log(userData);
-      document.location = "./?id=" + userData.user.id;
+      document.location = "./";
     })
     .catch((err) => {
       errorBox.classList.remove("hidden");

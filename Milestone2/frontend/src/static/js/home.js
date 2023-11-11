@@ -61,6 +61,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
   //   });
   // }
 
+  profile_picture.addEventListener("click", (e) => {
+    document.location = "/account";
+  });
+
   nfl_button.addEventListener("click", (e) => {
     document.location = "/nfl";
   });
