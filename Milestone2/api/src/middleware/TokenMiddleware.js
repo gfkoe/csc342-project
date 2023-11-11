@@ -47,8 +47,6 @@ exports.generateToken = (req, res, user) => {
     exp: Math.floor(Date.now() / 1000) + 60 * 60,
   };
 
-  console.log(API_SECRET);
-
   const token = jwt.sign(data, API_SECRET);
 
   //send token in cookie to client
