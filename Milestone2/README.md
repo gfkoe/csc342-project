@@ -8,8 +8,52 @@
 3. We are using jwt authentication to sign and verify tokens. We have implemented an API Secret Key as well which is stored in our .env file. We are only allowing accounts the ability to select a favorite team and save so that they can quickly access team pages. There are no teams currently in the database so they cannot select their favorite team. The idea is we will not allow non-logged in users the ability to select their favorite teams for convenience. The non-logged in users can still access the settings page at the moment but it does not currently do anything.
 
 4. All Pages
-    - home.html (home page for users logged-in and not logged-in)
-    - login.html (login page for users who want to create an account or login)
-    - mlb.html (major league baseball homepage)
-    - mls.html (major league soccer homepage)
-    - nba.html (na)
+    - home.html (home page for users logged-in and not logged-in) (partially complete)
+    - login.html (login page for users who want to create an account or login) (partially complete)
+    - mlb.html (major league baseball homepage) (partially complete)
+    - mls.html (major league soccer homepage) (partially complete)
+    - nba.html (national basketball association (hopefully that is right) homepage) (partially complete)
+    - nfl.html (national football league homepage) (partially complete)
+    - settings.html (account settings page) (partially complete)
+    - tp.html (homepages for all teams across all leagues) (partially complete)
+
+5. Wireframes to Pages
+- We only have one wireframe to all of our pages. This is the link -> the pages all have been partially completed, so I don't believe any are completely finished -> [Link To Wireframe](../Proposal/Wireframes/Project%20Proposal%20CSC%20342%20-%20Wireframes.png);
+
+6. All API Endpoints And Their Behavior
+    - post("/users/login") 
+    // takes a user username and password and checks the database to determine if we have a valid user and then logs in that user
+
+    - post("/users/logout")
+    // takes the currently logged in user and removes them as the current user (aka logs them out)
+
+    - get("/users/current")
+    // returns the currently logged in user
+
+    - get("/users/:userId")
+    // get a user from the database with a passed user id
+
+    // NOTE: TeamRoutes will be updated in order to use an external api so these paths wont match but the idea behind these paths will still be implements
+
+    - get("/leagues/:leagueId/schedule")
+    // get a sports league weekly schedule for printing all games on the main league pages
+
+    - get("/games/:gameId/score")
+    // get updates for the score of a live game
+
+    - get("/teams/:teamId")
+    // gets a team with a passed team id
+
+7. ER Diagram
+
+
+8. Team Contributions
+
+Jake:
+    -
+
+Gabe:
+    -
+
+Jai:
+    -
