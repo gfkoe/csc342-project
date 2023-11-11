@@ -35,4 +35,8 @@ frontendRouter.get("/tp", (req, res) => {
   res.sendFile(`${html_dir}tp.html`);
 });
 
+frontendRouter.get("/account", (req, res) => {
+  res.sendFile(`${html_dir}account.html`);
+});
+
 module.exports = frontendRouter;

@@ -16,17 +16,17 @@ const {
   removeToken,
 } = require("../middleware/TokenMiddleware");
 
-userRouter.get("/", (req, res) => {
-  res.sendFile(`${html_dir}index.html`);
-});
+// userRouter.get("/", (req, res) => {
+//   res.sendFile(`${html_dir}index.html`);
+// });
 
-userRouter.get("/error", (req, res) => {
-  res.sendFile(`${html_dir}error.html`);
-});
+// userRouter.get("/error", (req, res) => {
+//   res.sendFile(`${html_dir}error.html`);
+// });
 
-userRouter.get("/login", (req, res) => {
-  res.sendFile(`${html_dir}login.html`);
-});
+// userRouter.get("/login", (req, res) => {
+//   res.sendFile(`${html_dir}login.html`);
+// });
 
 const UserDAO = require("../db/UserDAO");
 

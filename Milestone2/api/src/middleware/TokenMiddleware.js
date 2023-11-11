@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 
 const TOKEN_COOKIE_NAME = "SportsPlaceToken";
 
-const API_SECRET = process.env.API_SECRET;
+const API_SECRET = process.env.API_SECRET_KEY;
 
 exports.TokenMiddleware = (req, res, next) => {
   // We will look for the token in two places:
