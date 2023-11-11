@@ -53,7 +53,7 @@ Jake:
     -
 
 Gabe:
-    -
+    -Database, file system, login page, refactor api, VM debugging
 
 Jai:
-    -
+    -Authentication, Account dynamic implementation
