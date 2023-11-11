@@ -19,7 +19,7 @@ function getUserByCredentials(username, password) {
 function getUserById(userId) {
   return db
     .query("SELECT * FROM user WHERE usr_id=?", [userId])
-    .then(({ result }) => {
+    .then(({ results }) => {
       const user = new User(results[0]);
       if (user) {
         return user;
