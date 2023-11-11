@@ -3,7 +3,7 @@ const frontendRouter = express.Router();
 
 const html_dir = __dirname + "/";
 
-frontendRouter.get("/home", (req, res) => {
+frontendRouter.get("/", (req, res) => {
   res.sendFile(`${html_dir}home.html`);
 });
 

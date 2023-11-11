@@ -12,6 +12,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
   });
 
   home_button.addEventListener('click', (e) => {
-      document.location = "/home";
+      document.location = "/";
   });
 });
