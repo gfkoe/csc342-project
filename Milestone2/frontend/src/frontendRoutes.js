@@ -24,7 +24,7 @@ frontendRouter.get("/nba", (req, res) => {
 });
 
 frontendRouter.get("/nfl", (req, res) => {
-  res.sendFile(`${html_dir}mlb.html`);
+  res.sendFile(`${html_dir}nfl.html`);
 });
 
 frontendRouter.get("/settings", (req, res) => {
