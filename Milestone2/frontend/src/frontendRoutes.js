@@ -3,7 +3,7 @@ const frontendRouter = express.Router();
 
 const html_dir = __dirname + "/";
 
-frontendRouter.get("/", (req, res) => {
+frontendRouter.get("/home", (req, res) => {
   res.sendFile(`${html_dir}home.html`);
 });
 
@@ -33,6 +33,10 @@ frontendRouter.get("/settings", (req, res) => {
 
 frontendRouter.get("/tp", (req, res) => {
   res.sendFile(`${html_dir}tp.html`);
+});
+
+frontendRouter.get("/account", (req, res) => {
+  res.sendFile(`${html_dir}account.html`);
 });
 
 module.exports = frontendRouter;
