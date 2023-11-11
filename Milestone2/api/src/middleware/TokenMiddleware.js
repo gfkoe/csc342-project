@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 
 const TOKEN_COOKIE_NAME = "SportsPlaceToken";
 
-const API_SECRET = process.env.API_SECRET;
+const API_SECRET = process.env.API_SECRET_KEY;
 
 exports.TokenMiddleware = (req, res, next) => {
   // We will look for the token in two places:
@@ -46,6 +46,8 @@ exports.generateToken = (req, res, user) => {
     // Use the exp registered claim to expire token in 1 hour
     exp: Math.floor(Date.now() / 1000) + 60 * 60,
   };
+
+  console.log(API_SECRET);
 
   const token = jwt.sign(data, API_SECRET);
 
