@@ -50,7 +50,7 @@
 8. Team Contributions
 
 Jake:
-    -
+    - Database, got together a plan for external API for teams, schedules, and live scoring. Updating static JS which involved page navigation. Also helped with VM debugging with Gabe.
 
 Gabe:
     -Database, file system, login page, refactor api, VM debugging
