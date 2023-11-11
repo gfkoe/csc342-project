@@ -45,6 +45,7 @@
     // gets a team with a passed team id
 
 7. ER Diagram
+    - https://lucid.app/lucidchart/867f6ac4-53d2-49da-9407-28c0546f6da1/edit?viewport_loc=-158%2C-633%2C2867%2C1487%2C0_0&invitationId=inv_19848442-85ec-4d9c-b0c6-f341d8403c03
 
 
 8. Team Contributions
