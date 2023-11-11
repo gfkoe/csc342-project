@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
   //   });
   // }
 
-
   nfl_button.addEventListener("click", (e) => {
     document.location = "/nfl";
   });
@@ -81,16 +80,16 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 //TODO: WILL NEED TO UNCOMMENTED WHEN AUTHENTICATION WORKS
 
-// api
-//   .getCurrentUser()
-//   .then((user) => {
-//     updateUserBlock(user);
-//   })
-//   .catch((error) => {
-//     if (error.status === 401) {
-//       console.log("We are not logged in");
-//       document.location = "../login";
-//     } else {
-//       console.log(`${error.status}`, error);
-//     }
-//   });
+api
+  .getCurrentUser()
+  .then((user) => {
+    updateUserBlock(user);
+  })
+  .catch((error) => {
+    if (error.status === 401) {
+      console.log("We are not logged in");
+      document.location = "../login";
+    } else {
+      console.log(`${error.status}`, error);
+    }
+  });
