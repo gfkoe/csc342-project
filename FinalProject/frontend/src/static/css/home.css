@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&family=Pixelify+Sans&family=Roboto&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pixelify+Sans&family=Roboto&family=Young+Serif&display=swap");
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.header h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 42px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+#signIn {
+  border: 2px solid gray;
+  border-radius: 15%;
+  font-family: "Roboto", sans-serif;
+  width: 75px;
+  height: 25px;
+}
+
+#signIn:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+#notifications {
+  border: 2px solid gray;
+  border-radius: 15%;
+  font-family: "Roboto", sans-serif;
+  width: 100px;
+  height: 25px;
+}
+
+#notifications:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+
+.space-settings {
+  margin-right: 215px;
+}
+
+#settingsBtn {
+  width: 75px;
+  height: 25px;
+  border-radius: 15%;
+  border: 2px solid gray;
+  font-family: "Roboto", sans-serif;
+}
+
+#settingsBtn:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.leagues {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.leagues button {
+  border: 0;
+  background-color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  border: 1px solid gray;
+  width: 75px;
+}
+
+.leagues button:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdownLeagues {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdownLeagues-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 143px;
+}
+
+.dropdownLeagues-content a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownLeagues:hover .dropdownLeagues-content {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 6px 1px rgb(185, 185, 185);
+}
+
+.dropdownLeagues-content a:hover {
+  background-color: grey;
+  color: white;
+}
+
+.page-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ads {
+  display: flex;
+  height: 400px;
+  width: 110px;
+  flex-direction: column;
+  border: 2px solid gray;
+  align-items: center;
+  justify-content: center;
+}
+
+.homePicture {
+  display: flex;
+  height: 400px;
+  width: 350px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid gray;
+}
+
+.favorite-teams {
+  display: flex;
+  height: 400px;
+  width: 110px;
+  border: 2px solid gray;
+  flex-direction: column;
+  align-items: center;
+}
+
+#fTeamsLabel {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#nflLabel {
+  font-family: "Oswald", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  align-self: flex-start;
+}
+
+#nbaLabel {
+  font-family: "Oswald", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  align-self: flex-start;
+}
+
+#mlbLabel {
+  font-family: "Oswald", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  align-self: flex-start;
+}
+
+#mlsLabel {
+  font-family: "Oswald", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  align-self: flex-start;
+}
+
+#profilePic:hover {
+  opacity: 0.76;
+}

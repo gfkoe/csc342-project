@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="js/login.js" type="module"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Sports Place</h1>
+    </div>
+
+    <div class="accountInfo">
+      <h1>Account Sign In</h1>
+      <div id="errorbox" class="hidden"></div>
+      <form>
+        <div class="username">
+          <label id="userLabel">Username</label>
+          <input id="userText" type="text" />
+        </div>
+
+        <div class="password">
+          <label id="passLabel">Password</label>
+          <input id="passText" type="password" />
+        </div>
+
+        <div class="buttons">
+          <input id="loginButton" type="button" value="Log In" />
+          <input
+            id="createAccountButton"
+            type="button"
+            value="Create Account"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
