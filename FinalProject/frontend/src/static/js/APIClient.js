@@ -24,4 +24,8 @@ export default {
   logOut: () => {
     return HTTPClient.post(API_BASE + "/users/logout", {});
   },
+
+  getTeamByName: (leagueName, teamName) => {
+    return HTTPClient.get(API_BASE + `/teams/${leagueName}/${teamName}`);
+  }
 };
