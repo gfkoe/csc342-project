@@ -39,4 +39,8 @@ frontendRouter.get("/account", (req, res) => {
   res.sendFile(`${html_dir}account.html`);
 });
 
+frontendRouter.get("/offline", (req, res) => {
+  res.sendFile(`${html_dir}offline.html`);
+});
+
 module.exports = frontendRouter;
