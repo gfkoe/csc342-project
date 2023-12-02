@@ -6,6 +6,10 @@ JAKE ADD HERE:
 2. Authenticaiton and authorization
     Our authentication system uses JWT web tokens to store the currently logged in user. Our backend queries our database, checking if there is a user with the given username and password, and then logs in upon success. JWT is using an api key that is stored in .env, and is not accessable to the user. Authorization for created accounts is based on whether or not they already exist within the database. We also were not able to implement protection against accessing the endpoints by any given user.
 
+3. Cache 
+    The service worker in the described system employs a cache-first strategy, primarily caching static assets (HTML, CSS, JavaScript, and images) during installation for offline access. For dynamic requests, the network is checked first, with the cache serving as a fallback if the network is unavailable, providing an offline experience for critical parts of the application Caching static assets is chosen due to their infrequent changes and essential role in app functionality. The cache fallback ensures that, for dynamic requests, some existing data can be displayed even if not entirely up-to-date. An offline page serves as a last resort when no data is available. This approach strikes a balance, offering offline capabilities while prioritizing network access for updated data. The cache is versioned and cleaned up during the activation event to prevent indefinite growth.
+
+
 4. All Pages
     - home.html (home page for users logged-in and not logged-in) (partially complete)
     - login.html (login page for users who want to create an account or login) (complete)
@@ -63,4 +67,4 @@ Gabe:
     -Worked on the file structure, API, getting Repo set up along with VM, getting dockerfile's and worked on the database. Also worked on logging in, account creation, and User API features. For the final submission, spent time doing working on installability, account creation, and worked with Jake on figuring out the team database and the external API. Helped with frontend when I could, but we were pressed for time, most of which I spent on the backend.
 
 Jai:
-    -Authentication, Account dynamic implementation
+    -Routes, Authentication, Account dynamic implementation, Offline Functionality
