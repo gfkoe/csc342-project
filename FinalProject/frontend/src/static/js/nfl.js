@@ -21,6 +21,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
         }).catch(err => {
             console.log(err);
         });
-        // document.location = "/";
+        document.location = "/";
     });
 });
