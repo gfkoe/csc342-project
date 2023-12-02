@@ -14,9 +14,25 @@ INSERT INTO `user` (`usr_id`, `usr_first_name`, `usr_last_name`, `usr_username`,
 	(1, 'Stu', 'Dent', 'student', '83d9bdb5e20f3571b087db9aabf190a296741c3e864d7742f35658cfccc1b79c4599aad25084aa9a28c649a50c92244227b3e53e197621301d619d1ea01873c4', '48c8947f69c054a5caa934674ce8881d02bb18fb59d5a63eeaddff735b0e9', 'https://robohash.org/veniamdoloresenim.png?size=64x64&set=set1'),
 	(2, 'Gra', 'Duate', 'graduate', 'e289219c34f9a32ebc82393f09719b7f34872de95463242b5ffe8bb4b11a5fe7d454f9f5d082c8207c5d69b220ba06624b4bb15ffa05cc7d7d53c43f9e96da6a', '801e87294783281ae49fc8287a0fd86779b27d7972d3e84f0fa0d826d7cb67dfefc', 'https://robohash.org/nullaautemin.png?size=64x64&set=set1');
 
---
--- Table structure for table `teams`
---
+
+CREATE TABLE IF NOT EXISTS `games` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `date` varchar(32) NOT NULL,
+  `timestamp` varchar(32) NOT NULL,
+  `week` int(10) unsigned NOT NULL,
+  `home_team_id` int(10) unsigned NOT NULL,
+  `away_team_id` int(10) unsigned NOT NULL,
+  `status` varchar(2) NOT NULL,
+  `final_home_score` int(10) unsigned NOT NULL,
+  `final_away_score` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+/** NS = not started, FT = finished */
+INSERT INTO `games` (`id`, `date`, `timestamp`, `week`, `home_team_id`, `away_team_id`, `status`, `final_home_score`, `final_away_score`) VALUES
+(1, '', '', 1, 1, 2, 'FT', 1, 1),
+(2, '', '', 1, 1, 2, 'FT', 1, 1);
+
 
 CREATE TABLE IF NOT EXISTS `teams` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,

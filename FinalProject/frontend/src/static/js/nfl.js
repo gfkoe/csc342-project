@@ -14,11 +14,10 @@ document.addEventListener('DOMContentLoaded', (e) => {
     });
 
     home_button.addEventListener('click', (e) => {
-        // api.getTeamByName("NFL", "San Francisco 49ers").then(team => {
-        //     console.log(team);
-        // }).catch(error => {
-        //     console.log("error getting team!");
-        // });
-        document.location = "/";
+        api.initialize().then(response => {
+        }).catch(err => {
+            console.log(err);
+        });
+        // document.location = "/";
     });
 });
