@@ -18,7 +18,7 @@ const {
 
 const UserDAO = require("../db/UserDAO");
 
-userRouter.post("/users/login", TokenMiddleware, (req, res) => {
+userRouter.post("/users/login", (req, res) => {
   if (req.body.username && req.body.password) {
     UserDAO.getUserByCredentials(req.body.username, req.body.password)
       .then((user) => {
