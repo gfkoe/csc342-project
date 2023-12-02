@@ -16,21 +16,9 @@ const {
   removeToken,
 } = require("../middleware/TokenMiddleware");
 
-// userRouter.get("/", (req, res) => {
-//   res.sendFile(`${html_dir}index.html`);
-// });
-
-// userRouter.get("/error", (req, res) => {
-//   res.sendFile(`${html_dir}error.html`);
-// });
-
-// userRouter.get("/login", (req, res) => {
-//   res.sendFile(`${html_dir}login.html`);
-// });
-
 const UserDAO = require("../db/UserDAO");
 
-userRouter.post("/users/login", (req, res) => {
+userRouter.post("/users/login", TokenMiddleware, (req, res) => {
   if (req.body.username && req.body.password) {
     UserDAO.getUserByCredentials(req.body.username, req.body.password)
       .then((user) => {
@@ -48,6 +36,19 @@ userRouter.post("/users/login", (req, res) => {
   } else {
     res.status(401).json({ error: "Not authenticated" });
   }
+});
+
+userRouter.post("/users/create", (req, res) => {
+  console.log("Hello");
+  console.log(req.body);
+  UserDAO.createUser(req.body)
+    .then((result) => {
+      generateToken(req, res, result);
+      res.json(result);
+    })
+    .catch((error) => {
+      res.status(400).json({ error: error });
+    });
 });
 
 userRouter.post("/users/logout", (req, res) => {

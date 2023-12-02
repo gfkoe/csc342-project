@@ -111,3 +111,17 @@ body {
 .logout-btn:hover {
   background-color: #c82333;
 }
+
+#home {
+  width: 75px;
+  border: 1px solid gray;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-radius: 12%;
+}
+
+#home:hover {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}

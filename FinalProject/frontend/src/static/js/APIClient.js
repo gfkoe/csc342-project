@@ -18,10 +18,21 @@ export default {
     return HTTPClient.post(API_BASE + "/users/login", data);
   },
 
+  createAccount: (first_name, last_name, username, password) => {
+    let data = {
+      first: first_name,
+      last: last_name,
+      username: username,
+      password: password,
+    };
+    // console.log(data);
+    return HTTPClient.post(API_BASE + "/users/create", data);
+  },
+
   logOut: () => {
     return HTTPClient.post(API_BASE + "/users/logout", {});
   },
-
+  
   initialize: () => {
     return HTTPClient.post(API_BASE + "/games/intialize", {});
   },
@@ -52,5 +63,5 @@ export default {
 
   getAllGames: () => {
     return HTTPClient.get(API_BASE + "/games/all");
-  }
+  },
 };

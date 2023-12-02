@@ -39,4 +39,12 @@ frontendRouter.get("/account", (req, res) => {
   res.sendFile(`${html_dir}account.html`);
 });
 
+frontendRouter.get("/offline", (req, res) => {
+  res.sendFile(`${html_dir}offline.html`);
+});
+
+frontendRouter.get("/create_account", (req, res) => {
+  res.sendFile(`${html_dir}create_account.html`);
+});
+
 module.exports = frontendRouter;
