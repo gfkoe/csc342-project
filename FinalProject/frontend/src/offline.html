@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Sports Place - Offline</title>
+    <title>Sports Place - Offline</title>
 
-  <link rel="stylesheet" href="css/home.css">
-  
-  <script src="js/offline.js" type="module"></script>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="images/icon-192x192.png" />
+    <link rel="stylesheet" href="css/home.css" />
 
-</head>
+    <script src="js/offline.js" type="module"></script>
+  </head>
 
-<body>
-
-  <div class="header">
-    <h1 id="header_title">Sports Place</h1>
-  </div>
-
-  <main>
-
-    <h1>You are offline</h1>
-
-    <h2>Sports scores unavailable until you reconnect.</h2>
-
-    <p>Please check your internet connection.</p>
-
-    <div id="update" style="display:none">
-      A new version of the app is available!
+  <body>
+    <div class="header">
+      <h1 id="header_title">Sports Place</h1>
     </div>
 
-    <button onclick="window.location.reload()">Try Again</button>
+    <main>
+      <h1>You are offline</h1>
 
-  </main>
-  
-  <footer>
-    Copyright Sports Place 2023
-  </footer>
+      <h2>Sports scores unavailable until you reconnect.</h2>
 
-</body>
+      <p>Please check your internet connection.</p>
 
+      <div id="update" style="display: none">
+        A new version of the app is available!
+      </div>
+
+      <button onclick="window.location.reload()">Try Again</button>
+    </main>
+
+    <footer>Copyright Sports Place 2023</footer>
+  </body>
 </html>
