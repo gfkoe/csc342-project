@@ -3,7 +3,7 @@ import api from "./APIClient.js";
 const loginButton = document.querySelector("#loginButton");
 const username = document.querySelector("#userText");
 const password = document.querySelector("#passText");
-
+const createAccountButton = document.querySelector("#createAccountButton");
 const errorBox = document.querySelector("#errorbox");
 
 loginButton.addEventListener("click", (e) => {
@@ -22,4 +22,8 @@ loginButton.addEventListener("click", (e) => {
         errorBox.innerHTML = err;
       }
     });
+});
+
+createAccountButton.addEventListener("click", (e) => {
+  document.location = "./create_account";
 });

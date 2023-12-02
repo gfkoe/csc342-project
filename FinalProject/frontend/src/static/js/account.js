@@ -2,6 +2,7 @@ import api from "./APIClient.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const logoutButton = document.querySelector("#logoutButton");
+  let home_button = document.querySelector("#home");
 
   logoutButton.addEventListener("click", () => {
     api
@@ -14,8 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 
+  home_button.addEventListener("click", (e) => {
+    document.location = "/";
+  });
+
   // Fetch and display user details (replace with your API call)
-  api.getCurrentUser()
+  api
+    .getCurrentUser()
     .then((user) => {
       updateProfile(user);
     })
@@ -25,19 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", async () => {
-    // Fetch current user data
-    try {
-      const currentUser = await api.getCurrentUser();
-      updateProfile(currentUser);
-    } catch (error) {
-      if (error.status === 401) {
-        console.log("User not logged in");
-        // Redirect to login page or handle as needed
-      } else {
-        console.error("Error fetching user data:", error);
-      }
+  // Fetch current user data
+  try {
+    const currentUser = await api.getCurrentUser();
+    updateProfile(currentUser);
+  } catch (error) {
+    if (error.status === 401) {
+      console.log("User not logged in");
+      // Redirect to login page or handle as needed
+    } else {
+      console.error("Error fetching user data:", error);
     }
-  });
+  }
+});
 
 function updateProfile(user) {
   const profileImage = document.querySelector("#profileImage");
