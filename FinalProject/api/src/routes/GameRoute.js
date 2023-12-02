@@ -22,6 +22,8 @@ gameRouter.post("/games/intialize", (req, res) => {
     return response.json();
 })
 .then(result => console.log(result))
+
+// gets size of response array -> console.log(result.response.length)
 .catch(err => {
 	console.log(err);
 });
