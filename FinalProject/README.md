@@ -25,7 +25,7 @@ JAKE ADD HERE:
     - post("/users/login") 
     // takes a user username and password and checks the database to determine if we have a valid user and then logs in that user
     
-    -post("/users/create")
+    - post("/users/create")
     // creates a new user with the first name, last name, username, and password and adds them to the system, logging in
     // Unfortunately, after creating an account then logging in, I am not able to log back in. When trying to make an account with that username again,
     // it is already in use
