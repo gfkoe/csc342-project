@@ -1,54 +1,49 @@
-// data for schedules
-const scheduleData = require("./data/schedule.json");
+const db = require("./DBConnection");
+const Team = require('./models/Team');
 
-// data for live scoring
-const liveScoreData = require("./data/liveScore.json");
+function getTeamByName(teamName) {
+  return db
+  .query("SELECT * FROM teams WHERE name=?", [teamName])
+  .then(({results}) => {
+    const team = new Team(results[0]);
+    console.log("Team = " + team);
+    if(team) {
+      return team;
+    }
 
-// data for team information
-
-const nflData = require("./data/nflTeams.json");
-
-const nbaData = require("./data/nbaTeams.json");
-
-const mlbData = require("./data/mlbTeams.json");
-
-const mlsData = require("./data/mlsTeams.json");
-
-function getScheduleForLeague(leagueId) {
-  // Retrieve and filter schedule data for the specified league
-  return scheduleData.filter((item) => item.leagueId === leagueId);
+    else {
+      throw new Error("No such team by name " + teamName);
+    }
+  });
 }
 
-function getLiveScoreForGame(gameId) {
-  // Retrieve live scoring data for the specified game
-  return liveScoreData.find((item) => item.gameId === gameId);
+function getTeamByID(teamId) {
+  db
+  .query("SELECT * FROM teams WHERE id=?", [teamId])
+  .then(({results}) => {
+    const team = new Team(results[0]);
+
+    if(team) {
+      return team;
+    }
+
+    else {
+      throw new Error("No such team with id " + teamId);
+    }
+  });
 }
 
-function getNflTeamInfo(teamId) {
-  // Retrieve team information for the specified team
-  return nflData.find((item) => item.teamId === teamId);
-}
-
-function getNbaTeamInfo(teamId) {
-  // Retrieve team information for the specified team
-  return nbaData.find((item) => item.teamId === teamId);
-}
-
-function getMlbTeamInfo(teamId) {
-  // Retrieve team information for the specified team
-  return mlbData.find((item) => item.teamId === teamId);
-}
-
-function getMlsTeamInfo(teamId) {
-  // Retrieve team information for the specified team
-  return mlsData.find((item) => item.teamId === teamId);
+function addTeamLogo(teamName, logo) {
+  db
+  .query("UPDATE games SET logo=? WHERE name=?", [logo, teamName])
+  .then(({results}) => {
+    console.log("Results from update " + results[0]);
+    return;
+  });
 }
 
 module.exports = {
-  getScheduleForLeague,
-  getLiveScoreForGame,
-  getNflTeamInfo,
-  getNbaTeamInfo,
-  getMlbTeamInfo,
-  getMlsTeamInfo,
+  getTeamByName: getTeamByName,
+  getTeamByID: getTeamByID,
+  addTeamLogo: addTeamLogo
 };
