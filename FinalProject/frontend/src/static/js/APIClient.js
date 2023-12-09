@@ -32,7 +32,7 @@ export default {
   logOut: () => {
     return HTTPClient.post(API_BASE + "/users/logout", {});
   },
-  
+
   initialize: () => {
     return HTTPClient.post(API_BASE + "/games/intialize", {});
   },
@@ -50,7 +50,7 @@ export default {
   },
 
   getTeamByName: (name) => {
-    return HTTPClient.get(API_BASE + `/teams/${name}`);
+    return HTTPClient.get(API_BASE + `/teams/names/${name}`);
   },
 
   getTeamById: (id) => {
