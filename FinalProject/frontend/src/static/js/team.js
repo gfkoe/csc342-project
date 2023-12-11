@@ -26,19 +26,19 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 function fillLeagueName(id) {
   api.getTeamById(id).then((team) => {
-    const league = team.team.league;
+    const league = team.league;
     console.log(league);
     const teamHeader = document.getElementById("teamHeader");
-    teamHeader.innerHTML = league + " - " + team.team.name;
+    teamHeader.innerHTML = league + " - " + team.name;
   });
 }
 
 function fillLeagueInfo(id) {
   api.getTeamById(id).then((team) => {
-    const conference = team.team.conference;
-    const division = team.team.division;
-    const abbrev = team.team.abbreviation;
-    const logo = team.team.logo;
+    const conference = team.conference;
+    const division = team.division;
+    const abbrev = team.abbreviation;
+    const logo = team.logo;
     const info = document.getElementById("info");
     const logoTag = document.getElementById("logo");
 
