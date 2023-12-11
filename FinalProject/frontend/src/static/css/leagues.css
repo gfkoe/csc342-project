@@ -162,11 +162,13 @@ a:hover {
 }
 
 .nba-labels label {
-  margin-left: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nba-labels-2 label {
-  margin-left: 415px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nba-teams {
@@ -182,11 +184,13 @@ a:hover {
 }
 
 .nba-teams ul {
-  margin-left: 375px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nba-teams-2 ul {
-  margin-left: 390px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mlb-labels {
@@ -196,7 +200,8 @@ a:hover {
 }
 
 .mlb-labels label {
-  margin-left: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mlb-teams {
@@ -206,7 +211,8 @@ a:hover {
 }
 
 .mlb-teams ul {
-  margin-left: 385px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mls-labels {

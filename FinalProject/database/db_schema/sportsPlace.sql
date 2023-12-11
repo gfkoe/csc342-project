@@ -114,7 +114,7 @@ INSERT INTO `teams` (`id`, `league`, `name`, `abbreviation`, `conference`, `divi
 (66, 'MLB', 'Boston Red Sox', 'BOS', 'AL', 'East', ''),
 (67, 'MLB', 'Chicago White Sox', 'CWS', 'AL', 'Cent', ''),
 (68, 'MLB', 'Chicago Cubs', 'CHC', 'NL', 'Cent', ''),
-(69, 'MLB', 'Cinncinnati Reds', 'CIN', 'NL', 'Cent', ''),
+(69, 'MLB', 'Cincinnati Reds', 'CIN', 'NL', 'Cent', ''),
 (70, 'MLB', 'Cleveland Guardians', 'CLE', 'AL', 'Cent', ''),
 (71, 'MLB', 'Colorado Rockies', 'COL', 'NL', 'West', ''),
 (72, 'MLB', 'Detroit Tigers', 'DET', 'AL', 'Cent', ''),
