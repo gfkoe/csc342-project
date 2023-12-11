@@ -137,16 +137,6 @@ a {
   justify-content: space-evenly;
 }
 
-.ads {
-  display: flex;
-  height: 400px;
-  width: 110px;
-  flex-direction: column;
-  border: 2px solid gray;
-  align-items: center;
-  justify-content: center;
-}
-
 .homePicture {
   display: flex;
   height: 400px;
@@ -154,7 +144,8 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid gray;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .favorite-teams {
