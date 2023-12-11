@@ -405,7 +405,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
   
   function createAFCEast() {
     const AFC_East = document.getElementById("AFC_East");
-    const jets = createTeamHtml("NY Jets");
+    const jets = createTeamHtml("New York Jets");
     const dolphins = createTeamHtml("Miami Dolphins");
     const patriots = createTeamHtml("New England Patriots");
     const bills = createTeamHtml("Buffalo Bills");
@@ -456,7 +456,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
     const cowboys = createTeamHtml("Dallas Cowboys");
     const commanders = createTeamHtml("Washington Commanders");
     const eagles = createTeamHtml("Philadelphia Eagles");
-    const giants = createTeamHtml("NY Giants");
+    const giants = createTeamHtml("New York Giants");
     NFC_East.appendChild(cowboys);
     NFC_East.appendChild(commanders);
     NFC_East.appendChild(eagles);
