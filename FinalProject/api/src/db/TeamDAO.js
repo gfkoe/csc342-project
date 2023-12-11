@@ -6,7 +6,7 @@ function getTeamByName(teamName) {
   .query("SELECT * FROM teams WHERE name=?", [teamName])
   .then(({results}) => {
     const team = new Team(results[0]);
-    console.log("Team = " + team);
+    console.log("Team Name = " + team.name);
     if(team) {
       return team;
     }
@@ -18,7 +18,7 @@ function getTeamByName(teamName) {
 }
 
 function getTeamByID(teamId) {
-  db
+  return db
   .query("SELECT * FROM teams WHERE id=?", [teamId])
   .then(({results}) => {
     const team = new Team(results[0]);
@@ -34,10 +34,9 @@ function getTeamByID(teamId) {
 }
 
 function addTeamLogo(teamName, logo) {
-  db
-  .query("UPDATE games SET logo=? WHERE name=?", [logo, teamName])
+  return db
+  .query("UPDATE teams SET logo=? WHERE name=?", [logo, teamName])
   .then(({results}) => {
-    console.log("Results from update " + results[0]);
     return;
   });
 }

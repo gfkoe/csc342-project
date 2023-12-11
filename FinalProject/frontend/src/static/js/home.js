@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 api
   .getCurrentUser()
   .then((user) => {
-    updateUserBlock(user);
+    // updateUserBlock(user);
   })
   .catch((error) => {
     if (error.status === 401) {

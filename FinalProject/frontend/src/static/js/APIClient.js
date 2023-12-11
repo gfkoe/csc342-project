@@ -50,7 +50,7 @@ export default {
   },
 
   getTeamByName: (name) => {
-    return HTTPClient.get(API_BASE + `/teams/${name}`);
+    return HTTPClient.get(API_BASE + `/teams/names/${name}`);
   },
 
   getTeamById: (id) => {
@@ -61,7 +61,19 @@ export default {
     return HTTPClient.put(API_BASE + `/teams/logo/${name}`, logo);
   },
 
-  getAllGames: () => {
-    return HTTPClient.get(API_BASE + "/games/all");
+  checkGamesSize: () => {
+    return HTTPClient.get(API_BASE + "/games/checksize");
   },
+
+  getLiveGames: (leagueName, dateVal) => {{
+    return HTTPClient.get(API_BASE + `/games/live/${leagueName}/${dateVal}`);
+  }},
+
+  getScheduleForTeamByName: (teamName) => {
+    return HTTPClient.get(API_BASE + `/games/schedule/${teamName}`);
+  },
+
+  getGameByDateForTeam: (teamName, date) => {
+    return HTTPClient.get(API_BASE + `/games/date/${teamName}/${date}`);
+  }
 };

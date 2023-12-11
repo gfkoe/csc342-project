@@ -5,13 +5,13 @@ const TeamDAO = require("../db/TeamDAO.js");
 // REMEMBER WE MIGHT NEED TO PASS TOKEN MIDDLEWARE
 
 // Endpoint to get a team by name
-teamRouter.get("/teams/:teamName", (req, res) => {
+teamRouter.get("/teams/names/:teamName", (req, res) => {
   let team_name = req.params.teamName;
   //
   TeamDAO.getTeamByName(team_name).then(team => {
     res.json(team);
   }).catch(error => {
-    res.status(400).json({error: err});
+    res.status(400).json({error: error});
   });
 });
 
@@ -22,7 +22,7 @@ teamRouter.get("/teams/:teamId", (req, res) => {
   TeamDAO.getTeamByID(team_id).then(team => {
     res.json(team);
   }).catch(error => {
-    res.status(400).json({error: err});
+    res.status(400).json({error: error});
   });
 });
 
@@ -34,7 +34,7 @@ teamRouter.put("/teams/logo/:teamName", (req, res) => {
     console.log(res);
     return;
   }).catch(error => {
-    res.status(400).json({error: err});
+    res.status(400).json({error: error});
   });
 });
 
