@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#FF0000" />
-    <script src="js/teams.js" type="module"></script>
+    <script src="js/team.js" type="module"></script>
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" />
     <link rel="apple-touch-icon" href="images/icon-192x192.png" />
@@ -34,7 +34,7 @@
 
     <div class="leagueHeader">
       <div class="leagueHeaderStyle">
-        <h1>League - Team Name</h1>
+        <h1 id="teamHeader"></h1>
       </div>
     </div>
 
@@ -44,11 +44,13 @@
     </div>
 
     <div class="content">
-      <!-- Ads -->
-      <div class="ads">ADS</div>
 
       <!-- Team Picture -->
-      <div class="homePicture">TEAM PICTURE</div>
+      <div class="homePicture" id="teamInfo">
+        <p id="info"></p>
+        <br>
+        <img src="" alt="" id="logo">
+      </div>
 
       <!-- Favorite Teams -->
       <div class="favorite-teams">

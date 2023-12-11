@@ -32,7 +32,7 @@ export default {
   logOut: () => {
     return HTTPClient.post(API_BASE + "/users/logout", {});
   },
-  
+
   initialize: () => {
     return HTTPClient.post(API_BASE + "/games/intialize", {});
   },

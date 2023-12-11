@@ -31,8 +31,8 @@ frontendRouter.get("/settings", (req, res) => {
   res.sendFile(`${html_dir}settings.html`);
 });
 
-frontendRouter.get("/tp", (req, res) => {
-  res.sendFile(`${html_dir}tp.html`);
+frontendRouter.get("/team", (req, res) => {
+  res.sendFile(`${html_dir}team.html`);
 });
 
 frontendRouter.get("/account", (req, res) => {

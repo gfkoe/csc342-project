@@ -95,7 +95,11 @@ a {
   font-size: 36px;
   font-style: italic;
 }
-
+#info {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  
+}
 .leagueHeaderBtnStyle {
   display: flex;
   align-items: center;
